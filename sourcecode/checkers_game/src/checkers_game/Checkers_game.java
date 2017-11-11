@@ -168,7 +168,7 @@ public class Checkers_game {
                 currentPlayer.playOnce();
             }
             
-            //game.addGameboardHistory();
+            game.addGameboardHistory();
             game.nextPlayer();
             
             if((game.getPlayerOne().getPieces().isEmpty())||(game.getPlayerTwo().getPieces().isEmpty())){

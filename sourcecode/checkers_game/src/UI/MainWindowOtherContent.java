@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -22,15 +23,27 @@ import javax.swing.JPanel;
  * @author alexi
  */
 public class MainWindowOtherContent extends JPanel {
-    private JLabel infoPion;
+    private JLabel infoPionOne;
+    private JLabel infoPionTwo;
     private Game game;
     
     public MainWindowOtherContent(Game currentGame) {
+        JPanel buttonsPanel = new JPanel();
+        JPanel playerOnePanel = new JPanel();
+        JPanel playerTwoPanel = new JPanel();
+        
         game=currentGame;
-        setBorder(BorderFactory.createLineBorder(Color.black));
-        JLabel player = new JLabel(game.getPlayerOne().getName());
-        JLabel infoColor = new JLabel("You are playing with black pieces");
-        infoPion = new JLabel("You have "+game.getPlayerOne().getPieces().size()+" pieces left");
+        this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+        this.setBorder(BorderFactory.createLineBorder(Color.black));
+        
+        JLabel playerTwo = new JLabel(game.getPlayerTwo().getName());
+        JLabel infoColorTwo = new JLabel("plays with white pieces");
+        infoPionTwo = new JLabel("and have "+game.getPlayerTwo().getPieces().size()+" pieces left");
+        
+        JLabel playerOne = new JLabel(game.getPlayerOne().getName());
+        JLabel infoColorOne = new JLabel("plays with black pieces");
+        infoPionOne = new JLabel("and have "+game.getPlayerOne().getPieces().size()+" pieces left");
+        
         JButton save = new JButton("Save the game");
         
         
@@ -86,12 +99,21 @@ public class MainWindowOtherContent extends JPanel {
             }
         });
         
-        this.add(player);
-        this.add(infoColor);
-        this.add(infoPion);
-        this.add(save);
-        this.add(undo);
-        this.add(redo);
+        buttonsPanel.add(save);
+        buttonsPanel.add(undo);
+        buttonsPanel.add(redo);
+        
+        playerOnePanel.add(playerOne);
+        playerOnePanel.add(infoColorOne);
+        playerOnePanel.add(infoPionOne);
+        
+        playerTwoPanel.add(playerTwo);
+        playerTwoPanel.add(infoColorTwo);
+        playerTwoPanel.add(infoPionTwo);
+        
+        this.add(buttonsPanel);
+        this.add(playerTwoPanel);
+        this.add(playerOnePanel);
     }
 
     public Game getGame() {
@@ -103,7 +125,8 @@ public class MainWindowOtherContent extends JPanel {
     
     @Override
     public void paintComponent(Graphics g) {
-        this.infoPion.setText("You have "+this.getGame().getPlayerOne().getPieces().size()+" pieces left");
+        this.infoPionOne.setText("and have "+this.getGame().getPlayerOne().getPieces().size()+" pieces left");
+        this.infoPionTwo.setText("and have "+this.getGame().getPlayerTwo().getPieces().size()+" pieces left");
     }
     
 }

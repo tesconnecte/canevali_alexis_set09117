@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Man.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Game.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/DeepCopy.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Player.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Check.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Piece.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Human.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/UI/FirstWindow.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/King.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Tree.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/checkers_game/Checkers_game.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/UI/MainWindowOtherContent.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/AI.java</file>
+            <file>file:/C:/Users/alexi_000/Documents/canevali_alexis_set09117/sourcecode/checkers_game/src/Model/Gameboard.java</file>
+        </group>
     </open-files>
 </project-private>

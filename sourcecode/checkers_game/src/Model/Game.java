@@ -53,7 +53,7 @@ public class Game implements Serializable{
             playerTwo.addPiece(currentPiece);
         }
         
-        currentPlayer.add((Player)DeepCopy.copy(playerOne));
+        currentPlayer.add((Player)DeepCopy.copy(playerTwo));
     }
     
     public Game(){
@@ -374,7 +374,15 @@ public class Game implements Serializable{
     }
     
     public void addGameboardHistory(){
-        gameUndoHistory.add((Game)DeepCopy.copy(this));
+        LinkedList<Game> provisorySaveUndo = new LinkedList<Game>();
+        provisorySaveUndo.addAll(this.gameUndoHistory);
+        LinkedList<Game> provisorySaveRedo = new LinkedList<Game>();
+        provisorySaveRedo.addAll(this.gameRedoHistory);
+        this.gameUndoHistory.removeAll(this.gameUndoHistory);
+        this.gameRedoHistory.removeAll(this.gameRedoHistory);
+        provisorySaveUndo.add((Game)DeepCopy.copy(this));
+        this.gameUndoHistory.addAll(provisorySaveUndo);
+        this.gameRedoHistory.addAll(provisorySaveRedo);
     }
     
     public void removeLastUndoElement(){
