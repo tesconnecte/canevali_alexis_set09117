@@ -3,12 +3,12 @@ SET09117 Algorithms and Data Structures
 40326915 Alexis CANEVALI
 ----Instruction for execution----
 There are 2 executables. You just need to have the Java SE installed on your computer.
-For checker_game.jar you can just click on it to launch the rogramm (it has a Gtaphical User Interface).
+For checker_game.jar you can just click on it to launch the programm (it has a Graphical User Interface).
 For the other one, launch it via a console (see further explenations in the file README.TXT).
 ----Report----
-Nothing special. PDF document realized using sharelatex
+PDF document realised using sharelatex
 ----Source code----
-To open the source code, please use the Netbeans IDE 8.1.
+To open the source code, please use the IDE "Netbeans IDE 8.1".
 From the start page, go to File>Open project...>Select the checkers game project in the sourcecode folder>Open project
 To rebuild a jar, press F11 or (Shift+F11) for build and clean. 
 Build will be located in the /dist/ folder.
